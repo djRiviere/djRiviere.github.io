@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website Landing Page - With Background Video Slider | Travel</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+  </head>
+  <body>
+
+    <header>
+      <!--<a href="#" class="brand">Travel</a>-->
+      <div class="menu-btn"></div>
+      <div class="navigation">
+        <div class="navigation-items">
+          <!--<a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Explore</a>
+          <a href="#">Gallery</a>-->
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+        <img class="video-slide active" src="images/battleship chaotic.webp" alt="">
+        <img class="video-slide" src="images/istockphoto-1224500457-612x612.jpg" alt="">
+        <img class="video-slide" src="images/istockphoto-1224500457-612x612.jpg" alt="">
+        <img class="video-slide" src="images/istockphoto-1224500457-612x612.jpg" alt="">
+        <img class="video-slide" src="images/istockphoto-1224500457-612x612.jpg" alt="">
+      <!--<video class="video-slide active" src="1.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="4.mp4" autoplay muted loop></video>
+      <video class="video-slide" src="5.mp4" autoplay muted loop></video>-->
+      <div class="content active">
+        <h1>Featured projects.<br><span>Battleship</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#"><span id="type_auto"></span> <div id="cursor"></div></a> 
+      </div>
+      <div class="content">
+        <h1>Featured projects.<br><span>Numbers Game</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#"><span class="type_auto1"></span></a>
+      </div>
+      <div class="content">
+        <h1>Featured projects.<br><span>Website</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#"><span class="type_auto2"></span></a>
+      </div>
+      <div class="content">
+        <h1>Featured projects.<br><span>Art Project</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#"><span class="type_auto3"></span></a>
+      </div>
+      <div class="content">
+        <h1>Featured projects.<br><span>Mastermind</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#"><span class="type_auto4"></span></a>
+      </div>
+      <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/dion.riviere/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+      <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+      </div>
+    </section>
+
+
+    <!--<div class="about_me_header">
+        <h1>about me</h1>
+    </div>-->
+    
+    
+     <div class="about_me_pic_and_text_grouping">
+        <div class="about_me_pic">
+            <img src="images/face prof pic.jpeg" alt="">
+        </div>
+        <div class="about_me_text">
+            <h2>Dion Riviere</h2>
+            <h3>Software developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+    <button onclick="myFunction()">Click me</button>
+
+    <div class="terminal">
+      <span> \[._.]/  Hey there👋 I'm Loakesh Bachhu</span>
+      <br>
+      <span class="dollar"> A "Full Stack" Engineer</span>
+      <br>
+      <span class="dollar"> Welcome to my world </span> 
+      <br>
+      <span class="dollar"> find me online on:</span> 
+      <br>
+
+    <ul>
+     <li>
+        <a href="https://www.linkedin.com/in/loakeshbachhu/" target="_blank">LinkedIn</a>
+      </li>
+      <li>
+        <a href="https://github.com/loakeshbachhu" target="_blank">Github</a>
+      </li>
+     
+      <li>
+        <a href="https://codepen.io/loakeshbachhu" target="_blank">Codepen</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/myself_loki/" target="_blank">Instagram</a>
+      </li>
+     </ul>
+   </div>
+        
+    
+
+    <script type="text/javascript">
+    //Javacript for responsive navigation menu
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    menuBtn.addEventListener("click", () => {
+      menuBtn.classList.toggle("active");
+      navigation.classList.toggle("active");
+    });
+
+    //Javacript for video slider navigation
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slide");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function(manual){
+      btns.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+
+      contents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      btns[manual].classList.add("active");
+      slides[manual].classList.add("active");
+      contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        sliderNav(i);
+      });
+    });
+    </script>
+    <script type="text/javascript">
+
+        // List of sentences
+        var _CONTENT = [ "Twinkle, twinkle, little star", "How I wonder what you are", "Up above the world so high", "Like a diamond in the sky" ];
+        
+        // Current sentence being processed
+        var _PART = 0;
+        
+        // Character number of the current sentence being processed 
+        var _PART_INDEX = 0;
+        
+        // Holds the handle returned from setInterval
+        var _INTERVAL_VAL;
+        
+        // Element that holds the text
+        var _ELEMENT = document.querySelector("#type_auto");
+
+        var _CURSOR = document.querySelector("#cursor");
+        
+        // Implements typing effect
+        function Type() { 
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX++;
+        
+            // If full sentence has been displayed then start to delete the sentence after some time
+            
+            
+        }
+        function myFunction(){
+          if(text === _CONTENT[_PART]) {
+                clearInterval(_INTERVAL_VAL);
+                setTimeout(function() {
+                    _INTERVAL_VAL = setInterval(Delete, 50);
+                }, 1000);
+            }
+        }
+        
+        // Implements deleting effect
+        function Delete() {
+            var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+            _ELEMENT.innerHTML = text;
+            _PART_INDEX--;
+        
+            // If sentence has been deleted then start to display the next sentence
+            if(text === '') {
+                clearInterval(_INTERVAL_VAL);
+        
+                // If last sentence then display the first one, else move to the next
+                if(_PART == (_CONTENT.length - 1))
+                    _PART = 0;
+                else
+                    _PART++;
+                _PART_INDEX = 0;
+        
+                // Start to display the next sentence after some time
+                setTimeout(function() {
+                    _INTERVAL_VAL = setInterval(Type, 100);
+                }, 200);
+            }
+        }
+        
+        // Start the typing effect on load
+        _INTERVAL_VAL = setInterval(Type, 100);
+        
+        </script>
+    
+    <!--<script src="scripttest.js"></script>
+
+    <script>
+        var typed= new Typed(".type_auto", {strings:["Read More"], typeSpeed:125, backSpeed:125, loop:false})
+    </script>
+    <script>
+        var typed= new Typed(".type_auto1", {strings:["Read More"], typeSpeed:125, backSpeed:125, loop:false})
+    </script>
+    <script>
+        var typed= new Typed(".type_auto2", {strings:["Read More"], typeSpeed:125, backSpeed:125, loop:false})
+    </script>
+    <script>
+        var typed= new Typed(".type_auto3", {strings:["Read More"], typeSpeed:125, backSpeed:125, loop:false})
+    </script>
+    <script>
+        var typed= new Typed(".type_auto4", {strings:["Read More"], typeSpeed:125, backSpeed:125, loop:false})
+    </script>-->
+    
+
+       
+        
+    
+       
+
+  </body>
+</html>
