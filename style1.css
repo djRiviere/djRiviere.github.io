@@ -906,3 +906,13 @@ header .navigation .navigation-items:hover{
 .l{
   color: #00ff15;
 }
+.video-slide1 {
+  position: absolute;
+  width: 100%;
+  
+  left: 0%;
+  top: 0%;
+  height: 80%;
+  object-fit: cover;
+  
+}

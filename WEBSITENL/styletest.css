@@ -1044,3 +1044,13 @@ html {
 .l{
   color: #00ff15;
 }
+.video-slide1 {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit: cover;
+
+}
