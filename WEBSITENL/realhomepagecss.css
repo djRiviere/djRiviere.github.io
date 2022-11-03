@@ -1,0 +1,1053 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  z-index: 999;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
+
+header .brand {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header .navigation {
+
+  position: relative;
+}
+
+header .navigation .navigation-items button {
+
+  background: rgb(0, 255, 21);
+  padding: 8px 35px;
+
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+header .navigation .navigation-items button:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items:hover {
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+
+/*header .navigation .navigation-items a{
+  
+  background: rgb(	0, 255, 21);
+  padding: 8px 35px;
+  
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+header .navigation .navigation-items a:before{
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}*/
+
+
+section {
+  padding: 100px 200px;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /**/
+  background: #000000;
+  /*background: #2696E9;*/
+}
+
+.home:before {
+  z-index: 777;
+  content: '';
+  position: absolute;
+  /*background: rgba(3, 96, 251, 0.3);*/
+  background: rgba(0, 0, 0, 0.452);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.home .content {
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-top: 50px;
+  display: none;
+}
+
+.home .content.active {
+  display: block;
+
+
+
+
+}
+
+.home .content h1 {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+}
+
+.home .content h1 span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.home .content p {
+  margin-bottom: 65px;
+}
+
+.home .content a {
+  background: rgb(0, 0, 0);
+  padding: 15px 35px;
+  color: #00ff15;
+  /*color: #1680AC;*/
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+
+
+}
+
+/*.home .content a span{
+    
+    font-family: "Lucida Console", "Courier New", monospace;
+    
+  }*/
+/*.home .content a span{
+    animation: blinker 1s step-start infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+    
+    
+  }*/
+
+
+.home .media-icons {
+
+  z-index: 1508;
+  position: absolute;
+  left: 202px;
+  top: 18px;
+  display: flex;
+  flex-direction: row;
+  transition: 0.5s ease;
+}
+
+.home .media-icons a {
+
+
+  padding-right: 25px;
+  color: #fff;
+  font-size: 2em;
+  transition: 0.3s ease;
+}
+
+.home .media-icons a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.home .media-icons a:hover {
+  transform: scale(1.3);
+}
+
+.home img {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-navigation {
+  z-index: 888;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(150px);
+  /*was 80^*/
+  margin-bottom: 12px;
+}
+
+.slider-navigation .nav-btn {
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+  transition: 0.3s ease;
+}
+
+.slider-navigation .nav-btn.active {
+  background: #00ff15;
+  /*background: #2696E9;*/
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.slider-navigation .nav-btn:hover {
+  transform: scale(1.2);
+}
+
+.video-slide {
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+  left: 0%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.video-slide.active {
+  clip-path: circle(150% at 0 50%);
+  transition: 2s ease;
+  transition-property: clip-path;
+
+}
+
+@media (max-width:1547px) {
+  .home .content h1 {
+    font-size: 3em;
+    line-height: 60px;
+  }
+}
+
+@media (max-width:1295px) {
+  .home .content h1 {
+    font-size: 2em;
+    line-height: 60px;
+  }
+
+  .home .content h1 span {
+    font-size: 2em;
+    line-height: 60px;
+  }
+}
+
+
+@media (max-width: 1040px) {
+  .home .content h1 {
+    font-size: 2em;
+    line-height: 60px;
+  }
+
+  .home .content h1 span {
+    font-size: 2em;
+    line-height: 60px;
+  }
+
+  header {
+    padding: 12px 20px;
+  }
+
+  section {
+    padding: 100px 20px;
+  }
+
+  .home .media-icons {
+    right: 15px;
+  }
+
+
+
+
+
+  header .navigation.active {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.5);
+  }
+
+
+  header .navigation .navigation-items a {
+
+    font-size: 1.2em;
+    margin: 20px;
+
+  }
+
+  header .navigation .navigation-items a:before {
+    background: #222;
+    height: 5px;
+  }
+
+  header .navigation.active .navigation-items {
+    background: #fff;
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+
+  }
+
+  .menu-btn {
+    background: url(menu.png)no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+
+  .menu-btn.active {
+    z-index: 999;
+    background: url(close.png)no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+  }
+
+  .home .media-icons {
+
+    z-index: 1508;
+    position: absolute;
+    left: 22px;
+    top: 18px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s ease;
+  }
+
+
+}
+
+
+@media (max-width: 685px) {
+  .home .content h1 {
+    font-size: 1.2em;
+    line-height: 20px;
+  }
+
+  .home .content h1 span {
+    font-size: 2em;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 570px) {
+  .home .content h1 {
+    font-size: 1.2em;
+    line-height: 20px;
+  }
+
+  .home .content h1 span {
+    font-size: 2em;
+    line-height: 60px;
+  }
+
+  .home .media-icons {
+
+    z-index: 1508;
+    position: absolute;
+    left: 22px;
+    top: 18px;
+    display: flex;
+    flex-direction: row;
+    transition: 0.5s ease;
+  }
+
+  header .navigation .navigation-items a {
+    z-index: 2000;
+  }
+}
+
+.about_me_header {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+.about_me_pic img {
+  position: relative;
+  border-radius: 50%;
+  width: 33vh;
+  height: 33vh;
+  background: #00ff15;
+  padding: 2px;
+  top: 7%;
+
+
+}
+
+.about_me_text {
+  padding-left: 70px;
+
+
+}
+
+.about_me_pic_and_text_grouping {
+  position: relative;
+  display: flex;
+  /*align-items: center;*/
+  /*justify-content: center;*/
+
+  padding-top: 110px;
+  /*width: 950px;*/
+  width: 60%;
+  left: 45vh;
+  transform: scale(1.2);
+  padding-bottom: 100px;
+  right: 20vh;
+}
+
+.about_me_text h2 {
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 70px;
+
+
+}
+
+.about_me_text h3 {
+  font-weight: 600;
+  font-feature-settings: 1.3em;
+  line-height: 50px;
+
+}
+
+.about_me_text p {
+  position: relative;
+  max-width: 600px;
+  font-size: 14px;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.rower {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.campus {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
+  position: relative;
+
+}
+
+.campus h1 {
+  top: 10px;
+  left: 41.5%;
+
+  position: absolute
+}
+
+.campus-col {
+  margin-left: 30px;
+  margin-right: 30px;
+  flex-basis: 22%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+
+  position: relative;
+  overflow: hidden;
+  height: 60vh;
+
+
+
+}
+
+.campus-col img {
+  /*flex-shrink: 0;*/
+  width: 100%;
+  display: block;
+  align-content: center;
+  object-fit: cover;
+  min-width: 100%;
+  min-height: 100%
+}
+
+.layer {
+  background: rgba(0, 0, 0, 0.582);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+
+
+}
+
+.layer:hover {
+  background: #00ff15;
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  top: 45%;
+
+  position: absolute;
+  opacity: 10;
+  transition: 0.5s;
+
+}
+
+
+.layer:hover h3 {
+
+  top: 1%;
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+}
+
+.layer p {
+
+  width: 80%;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+
+  top: 50%;
+  left: 10%;
+  position: relative;
+  opacity: 0;
+  transition: 0.5s;
+
+
+}
+
+.layer:hover p {
+
+  top: 15%;
+  opacity: 10;
+
+}
+
+.rotater {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #000000;
+  padding: 6px;
+  color: #00ff15;
+}
+
+.rotate {
+  font-family: "Lucida Console", "Courier New", monospace;
+
+}
+
+.bannerIMG {
+  background-image: url("images/keyboard\ move.gif");
+
+  background-position: center;
+
+  display: flex;
+  /*content:"";
+  display: table;
+  clear: both;*/
+
+
+}
+
+.bannerIMG {
+  border-radius: 10px;
+}
+
+.COLTEXT {
+  position: relative;
+  padding-top: 20px;
+  width: 33.3%;
+  text-align: center;
+  color: #fff;
+  padding: 30px;
+}
+
+.coles1 {
+  padding-left: 70px;
+}
+
+.coles3 {
+  padding-right: 70px;
+}
+
+.coles2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.COLTEXT h1 {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.COLTEXT p {
+  padding-top: 10px;
+  position: relative;
+}
+
+.side {
+  position: relative;
+  width: 70%;
+  left: 15%;
+  text-align: center;
+
+}
+
+.side h1 {
+  position: relative;
+  font-size: 24px;
+  bottom: 30px;
+  padding-top: 25px;
+}
+
+.skills {
+  position: relative;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("images/uwp2498489.gif");
+  background-position: center;
+  top: 40px;
+
+}
+
+.skills h1 {
+
+  position: absolute;
+  top: 20%;
+  z-index: 1900;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+}
+
+.containeresc {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skillse {
+
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+
+}
+
+.fontcolors {
+  color: #fff;
+}
+
+.html {
+  width: 60%;
+  background-color: #00ff15;
+}
+
+.css {
+  width: 70%;
+  background-color: #00ff15;
+}
+
+.js {
+  width: 20%;
+  background-color: #00ff15;
+}
+
+.php {
+  width: 60%;
+  background-color: #00ff15;
+}
+
+.Python {
+  width: 45%;
+  background-color: #00ff15;
+}
+
+.skillbar {
+  padding-top: 40px;
+  position: relative;
+
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgb(29, 29, 29);
+  color: #fff;
+}
+
+
+
+/*-----------this is the pop up model button----------*/
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5000;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+
+
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-content p {
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #00ff15;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*------here i will add the terminal parts------*/
+.background-min {
+  position: fixed;
+  background-color: #000000;
+  border: 1px solid #888;
+  width: 200px;
+  height: 150px;
+  z-index: 6000;
+  bottom: 2%;
+  right: 1.5%;
+}
+
+.background-min button {
+  background: rgb(0, 255, 21);
+  padding: 2px 5px;
+
+  color: #000000;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+
+}
+
+
+.myBtn2 {
+
+  background: rgb(0, 255, 21);
+  padding: 8px 35px;
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 2px;
+  position: relative;
+}
+
+
+.background-min img {
+  position: absolute;
+  width: 50%;
+
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 10%;
+}
+
+.happyemoji {
+  opacity: 0;
+}
+
+.loveemoji {
+  opacity: 0;
+}
+
+.sademoji {
+  opacity: 1;
+}
+
+#myBtn2:hover>.sademoji {
+  opacity: 0;
+}
+
+#myBtn2:hover>.happyemoji {
+  opacity: 1;
+}
+
+
+
+
+.modal2 {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 5000;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 10%;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  
+  /* Black w/ opacity */
+
+
+}
+
+/* Modal Content */
+.modal2-content {
+  background-color: #000000;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-top: 20px solid white;
+
+  width: 80%;
+}
+
+.cmdentry {
+  position: relative;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #00ff15;
+  text-decoration: none;
+}
+
+.modal2-content a {
+  position: relative;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: #00ff15;
+  text-decoration: none;
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaaaaa;
+
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  color: rgb(0, 0, 0);
+  padding-top: 100px;
+  /* Location of the box */
+  font-weight: 400;
+  z-index: 9002;
+  width: 12%;
+  right: 0%;
+  top: -1.5%;
+
+}
+
+.close2:hover,
+.close2:focus {
+  color: rgb(146, 146, 146);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.cmdtextholder {
+  position: relative;
+}
+
+.cmdtext {
+  position: absolute;
+  color: black;
+  padding-top: 100px;
+  /* Location of the box */
+  font-weight: 400;
+  top: -2.5px;
+  width: 85%;
+
+}
+
+.blinkerclass {
+  font-weight: 700;
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+
+
+}
+
+
+
+@media (max-width:800px) {
+  .rower {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .layer p {}
+
+  .about_me_pic_and_text_grouping {
+
+    left: 10vh;
+
+  }
+.bannerIMG{
+  flex-direction: column;
+}
+.COLTEXT{
+  padding-right: 0%;
+  padding-top: 10%;
+  padding-bottom: 0%;
+  width: 80%;
+  padding-left: 20%;
+  
+}
+.coles3{
+  padding-bottom: 10%;
+}
+.campus h1{
+  left: 30.5%;
+}
+}
+
+
+
+@media (max-width:1040px) {
+  .layer h3 {
+    font-size: 24px;
+  }
+
+  .layer:hover h3 {
+
+
+    font-size: 24px;
+  }
+  .campus h1{
+    left: 35.5%;
+  }
+}
+.modal2-content img{
+    position: absolute;
+    
+    height: 47%;
+    right: 13%;
+}
+.l{
+  color: #00ff15;
+}
